@@ -1,0 +1,82 @@
+# Eva Home - Git Ignore
+
+# Veritabanı konfigürasyonu (hassas bilgiler)
+config/database.php
+
+# Yüklenen dosyalar
+uploads/*
+!uploads/.gitkeep
+assets/images/uploads/*
+!assets/images/uploads/.gitkeep
+
+# Logo dosyaları (toplu sipariş)
+uploads/logos/*
+!uploads/logos/.gitkeep
+
+# Geçici dosyalar
+*.tmp
+*.temp
+*.log
+
+# Windows
+Thumbs.db
+desktop.ini
+$RECYCLE.BIN/
+
+# MacOS
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Editor dosyaları
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# PHP
+*.cache
+vendor/
+
+# Backup dosyaları
+*.bak
+*.backup
+*.old
+
+# Session dosyaları
+sessions/*
+
+# Cache
+cache/*
+tmp/*
+
+# Environment dosyaları
+.env
+.env.local
+.env.production
+
+# Composer
+composer.lock
+
+# Node modules (eğer kullanılıyorsa)
+node_modules/
+
+# Build dosyaları
+dist/
+build/
+
+# Yedekleme SQL dosyaları (büyük olabilir)
+*.sql.gz
+backup_*.sql
+
+# Debug logları
+debug.log
+error.log
+access.log
+
+# Geliştirme test dosyaları
+test.php
+dev.php
+debug.php
+
